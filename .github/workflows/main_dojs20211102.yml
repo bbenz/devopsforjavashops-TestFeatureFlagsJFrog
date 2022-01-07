@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'DOJS20211102'
           slot-name: 'Production'
-          publish-profile: ${{ AZUREAPPSERVICE_PUBLISHPROFILE_31F4DE915CDD4A4A90692A3BCE1174AC }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_31F4DE915CDD4A4A90692A3BCE1174AC }}
           package: '*.jar'
