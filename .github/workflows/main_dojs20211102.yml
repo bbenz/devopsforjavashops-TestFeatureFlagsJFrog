@@ -25,7 +25,7 @@ jobs:
           java-version: '11'
 
       - name: Build with Maven
-        run: mvn -B package --s settings.xml
+        run: mvn package --s settings.xml
         env: 
              ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
              ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
