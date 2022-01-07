@@ -54,7 +54,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'DOJS20211102'
+          app-name: 'jfrogtestwebapp'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_31F4DE915CDD4A4A90692A3BCE1174AC }}
           package: '*.jar'
