@@ -5,6 +5,9 @@ name: Build and deploy JAR app to Azure Web App - DOJS20211102
 
 env: # Or as an environment variable
       APP_CONFIGURATION_CONNECTION_STRING: ${{ secrets.APP_CONFIGURATION_CONNECTION_STRING }}
+      ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+      ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+      ARTIFACTORY_HOST: ${{ secrets.ARTIFACTORY_HOST }}
       
 on:
   push:

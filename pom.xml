@@ -53,6 +53,19 @@
 
 	</dependencies>
 
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>a0d5wcyejghjl-artifactory-primary-0-releases</name>
+        <url>https://bbenzja.jfrog.io/artifactory/default-maven-virtual</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0d5wcyejghjl-artifactory-primary-0-snapshots</name>
+        <url>https://bbenzja.jfrog.io/artifactory/default-maven-virtual</url>
+    </snapshotRepository>
+</distributionManagement>
+
 	<build>
 		<plugins>
 			<plugin>
