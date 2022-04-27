@@ -56,13 +56,13 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-        <name>a0d5wcyejghjl-artifactory-primary-0-releases</name>
-        <url>https://bbenzja.jfrog.io/artifactory/default-maven-virtual</url>
+        <name>bbenzdevops-artifactory-primary-1-releases</name>
+        <url>https://bbenzdevops.jfrog.io/artifactory/azurejfrog-libs-release</url>
     </repository>
-    <snapshotRepository>
+        <snapshotRepository>
         <id>snapshots</id>
-        <name>a0d5wcyejghjl-artifactory-primary-0-snapshots</name>
-        <url>https://bbenzja.jfrog.io/artifactory/default-maven-virtual</url>
+        <name>bbenzdevops-artifactory-primary-1-snapshots</name>
+        <url>https://bbenzdevops.jfrog.io/artifactory/azurejfrog-libs-snapshot</url>
     </snapshotRepository>
 </distributionManagement>
 
