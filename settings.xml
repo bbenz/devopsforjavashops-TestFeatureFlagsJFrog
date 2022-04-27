@@ -21,13 +21,13 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>default-maven-virtual</name>
+          <name>azurejfrog-libs-release</name>
           <url>${ARTIFACTORY_HOST}</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
-          <name>default-maven-virtual</name>
+          <name>azurejfrog-libs-release</name>
           <url>${ARTIFACTORY_HOST}</url>
         </repository>
       </repositories>
@@ -37,13 +37,13 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>default-maven-virtual</name>
+          <name>azurejfrog-libs-release</name>
           <url>${ARTIFACTORY_HOST}</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
-          <name>default-maven-virtual</name>
+          <name>azurejfrog-libs-release</name>
           <url>${ARTIFACTORY_HOST}</url>
         </pluginRepository>
       </pluginRepositories>
