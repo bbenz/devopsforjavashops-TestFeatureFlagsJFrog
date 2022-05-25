@@ -23,9 +23,13 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: '11'
-
+   
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn package --s settings.xml
+      env: 
+          ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+          ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+          ARTIFACTORY_HOST: ${{ secrets.ARTIFACTORY_HOST }}
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
