@@ -3,6 +3,9 @@
 
 name: Build and deploy JAR app to Azure Web App - swamptest
 
+env: # Or as an environment variable
+      APP_CONFIGURATION_CONNECTION_STRING: ${{ secrets.APP_CONFIGURATION_CONNECTION_STRING }}
+      
 on:
   push:
     branches:
@@ -22,8 +25,12 @@ jobs:
           java-version: '11'
 
       - name: Build with Maven
-        run: mvn clean install
-
+        run: mvn package --s settings.xml
+        env: 
+          ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
+          ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
+          ARTIFACTORY_HOST: ${{ secrets.ARTIFACTORY_HOST }}
+          
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
